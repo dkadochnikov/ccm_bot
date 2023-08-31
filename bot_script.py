@@ -25,7 +25,7 @@ bot = telebot.TeleBot("6403748773:AAHkJeF4ZL0gPn3UgjLCx6wF2CJM_a7DNoo")
 
 # Загрузка предобученной модели и токенизатора
 tokenizer = AutoTokenizer.from_pretrained('tinkoff-ai/ruDialoGPT-medium')
-model = AutoModelForCausalLM.from_pretrained("fine-tuned ccm2")
+model = AutoModelForCausalLM.from_pretrained("fine-tuned_ccm2")
 
 # Обработчик команды /start
 @bot.message_handler(commands=['start'])
